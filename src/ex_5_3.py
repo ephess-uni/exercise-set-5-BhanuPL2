@@ -8,6 +8,11 @@ This module contains an entry point that:
 import numpy as np
 import argparse
 import os
+try:
+    from src.util import get_repository_root
+except ImportError:
+    from util import get_repository_root
+    
 if __name__ == "__main__":
     # Create your argument parser object here.
     # Collect the filename arguments from the command line
